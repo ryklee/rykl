@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<head>
 <body>
 <title>Ryan</title>
 <meta charset="UTF-8">
@@ -172,6 +173,24 @@
   }
 
 </style>
+</head>
+<script>
+
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+      if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+          document.getElementById("myBtn").style.display = "block";
+      } else {
+          document.getElementById("myBtn").style.display = "none";
+      }
+  }
+
+  function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  }
+</script>
 
 
   <div class="parallax1" id="home">

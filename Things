@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>People</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<style>
+  @font-face {
+        font-family: Simplifica; src: url("Fonts/SIMPLIFICA Typeface.ttf'); font-family: Prime; src: url("Fonts/Prime Regular.otf");
+  }
+  body {
+        background-size: cover;
+        margin: 0;
+  }
+  #name {
+        background-color:rgb(255,255,255,0.5);
+        text-align: center;
+        font-size: 600%;
+        font-family: Simplifica;
+        padding: 30px;
+        margin: 250px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(196,196,196,0.5);
+  }
+  li {
+    float: right;
+  }
+  li a {
+    display: block;
+    height: 58px;
+    color: black;
+    text-align: center;
+    padding: 14px 22px;
+    text-decoration: none;
+    font-family: Lato;
+    font-size: 120%
+  }
+  li a:hover {
+    background-color: rgb(137,137,137);
+  }
+
+
+  .fade {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+  }
+  .fade:hover {
+    opacity: 0.5;
+  }
+
+  .column {
+    -ms-flex: 33.33%;
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 4px;
+  }
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    padding: 10px;
+  }
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+  }
+  @media screen and (max-width: 400px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+</style>
+</head>
+<body>
+  <ul>
+    <li><a href="Index.html">Home</a></li>
+  </ul>
+
+  <div class="row">
+    <div class="column">
+      <div class="fade">
+        <a target="_blank" href="Pictures/People/Concert.jpg"><img src="Pictures/People/Concert.jpg"></a>
+      </div>
+      <div class="fade">
+        <a target="_blank" href="Pictures/People/ben flash.jpg"><img src="Pictures/People/ben flash.jpg"></a>
+      </div>
+    </div>
+    <div class="column">
+      <div class="fade">
+        <a target="_blank" href="Pictures/People/Esther.jpg"><img src="Pictures/People/Esther.jpg"></a>
+      </div>
+      <div class="fade">
+        <a target="_blank" href="Pictures/People/ben orange.jpg"><img src="Pictures/People/ben orange.jpg"></a>
+      </div>
+    </div>
+    <div class="column">
+      <div class="fade">
+        <a target="_blank" href="Pictures/People/japan festival guy.jpg"><img src="Pictures/People/japan festival guy.jpg"></a>
+      </div>
+      <div class="fade">
+        <a target="_blank" href="Pictures/People/Niko.jpg"><img src="Pictures/People/Niko.jpg"></a>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
